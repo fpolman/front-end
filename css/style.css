@@ -52,7 +52,7 @@ table {
 
 
 body {
-    font-family:"Open Sans";
+    font-family:"arial","Open Sans";
     color:#666;
 }
 
@@ -65,11 +65,15 @@ p {
 
 /* typografie */
 
+.center {
+  text-align: center;
+}
+
 h1 {
-    font-size:45px;
+    font-size:35px;
     font-weight:bold;
-    padding:10px 10px 10px 0;
-    color:#333;
+    padding:25px 10px 15px 0;
+    color:#444;
 }
 
 h1.white {
@@ -86,7 +90,7 @@ h1.smaller {
 h2 {
     font-size:30px;
     font-weight:bold;
-    padding:10px 10px 10px 0;
+    padding:25px 10px 15px 0;
     color:#444;
 }
 
@@ -118,13 +122,25 @@ h3.thin {
   width: 100%;
 }
 
+/* overflow hidden zorgt ervoor dat de omliggende container 
+van float elementen de hoogte krijgt van deze floated elementen*/
 #container {
 	width:90%;
 	margin: 0 auto;
+  overflow: hidden;
 }
 
 header {
-	background-color:#333;
+	background-color:#167F39;
+}
+
+#headerImg {
+  width:100%;
+}
+
+#headerImg img {
+  width:100%;
+
 }
 
 .img-top {
@@ -133,11 +149,12 @@ header {
 
 header h1 {
 	display:inline-block;
+  padding-left:10px;
 }
 
 /* navigatie */
 nav {
-	background:#555;
+	background:#044C29;
 }
 
 nav ul {
@@ -162,3 +179,89 @@ nav a:hover {
 	background: rgb(51,51,51);
 	color: #fff;
 }
+
+
+/* section introduction */
+#introduction {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.siteInfo {
+  float:left;
+  width:30.3333333%;
+  margin-right:3%;
+}
+
+.siteInfoLast {
+  float:left;
+  width:30.3333333%;
+}
+
+.mustDo {
+  padding-top:50px;
+  padding-bottom:50px;
+  clear:both;
+  background-color:#f9f9f9;
+}
+
+.mustDoWhite {
+  padding-top:50px;
+  padding-bottom:50px;
+  clear:both;
+  background-color:#fff;
+}
+
+.mustDoLeft {
+  float:left;
+  width:40%;
+  margin-right:5%;
+}
+
+.mustDoRight {
+  float:left;
+  width:55%;
+}
+
+.mustDoLeftImg {
+  float:left;
+  width:55%;
+
+}
+.mustDoRightText {
+  float:left;
+  width:40%;
+}
+
+.readMore-btn {
+  background-color: #167F39;
+  color: white;
+  margin-top: 20px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: all 0.25s ease 0s;
+}
+
+.readMore-btn:hover {
+  background-color:#044C29;
+}
+
+.loadMoreActivities {
+  clear:both;
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align:center;
+}
+
+.loadMore-btn {
+  background-color: #167F39;
+  color: white;
+  margin-top: 20px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: all 0.25s ease 0s;
+}
+
+
+
+
