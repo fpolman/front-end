@@ -52,15 +52,19 @@ table {
 
 
 body {
-    font-family:"arial","Open Sans";
+    font-family:"Open Sans";
     color:#666;
 }
 
 p {
     font-family: "Open Sans";
-    font-weight:300;
-    font-size:14px;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 24px;
+}
+
+p.white {
+  color:#fff;
 }
 
 /* typografie */
@@ -101,10 +105,10 @@ h2 {
 
 h2.thin {
     font-size:25px;
-    font-weight:bold;
     padding:10px 10px 10px 0;
     font-weight:500;
     color:#444;
+    font-family: "Open Sans";
 }
 
 h3 {
@@ -119,6 +123,14 @@ h3.thin {
     font-family: "Open Sans";
     font-weight:300;
     color:#444;
+}
+
+.siteInfo h2 .fa {
+    margin-right: 10px;
+}
+
+.siteInfoLast h2 .fa {
+    margin-right: 10px;
 }
 
 
@@ -190,6 +202,7 @@ nav a:hover {
 #introduction {
   padding-top:50px;
   padding-bottom:50px;
+  background-color:#fff;
 }
 
 .siteInfo {
@@ -277,6 +290,78 @@ button:hover {
 }
 
 
+
+
+footer {
+  background-color:#044c29;
+  padding:10px;
+}
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  .siteInfo {
+    clear:both;
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+  .siteInfoLast {
+    clear:both;
+    width:100%;
+    text-align:center;
+  }
+
+
+  .mustDoLeft {
+    clear:both;
+    width:100%;
+    text-align:center;
+  }
+
+  .mustDoRight {
+    clear:both;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+  }
+
+  .mustDoRight img {
+    width:80%;
+  }
+
+  .mustDoLeftImg {
+    clear:both;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+  }
+
+  .mustDoLeftImg img {
+    width:80%;
+  }
+
+  .mustDoRightText {
+    clear:both;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+  }
+
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
 
 
 
