@@ -69,6 +69,11 @@ p {
   text-align: center;
 }
 
+a {
+  color:#444;
+  text-decoration: none;
+}
+
 h1 {
     font-size:35px;
     font-weight:bold;
@@ -198,6 +203,43 @@ nav a:hover {
   width:30.3333333%;
 }
 
+/* camperVan */
+.camperVan {
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color:#FFDE8D;
+}
+
+.camperInfo {
+  float:left;
+  width:60%;
+  padding-right:5%;
+}
+
+.camperImg {
+  float:left;
+  width:35%;
+}
+
+button {
+  border:none;
+  background-color: #167F39;
+  margin-top: 20px;
+  padding: 20px 10px;
+  transition: all 0.25s ease 0s;
+}
+
+a button {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color:#044C29;
+}
+
+/* activiteiten */
+
 .mustDo {
   padding-top:50px;
   padding-bottom:50px;
@@ -214,53 +256,28 @@ nav a:hover {
 
 .mustDoLeft {
   float:left;
-  width:40%;
+  width:55%;
   margin-right:5%;
 }
 
 .mustDoRight {
   float:left;
-  width:55%;
+  width:40%;
 }
 
 .mustDoLeftImg {
   float:left;
-  width:55%;
+  width:40%;
+  margin-right:5%;
 
 }
 .mustDoRightText {
   float:left;
-  width:40%;
+  width:55%;
 }
 
-.readMore-btn {
-  background-color: #167F39;
-  color: white;
-  margin-top: 20px;
-  padding: 20px 10px;
-  text-decoration: none;
-  transition: all 0.25s ease 0s;
-}
 
-.readMore-btn:hover {
-  background-color:#044C29;
-}
 
-.loadMoreActivities {
-  clear:both;
-  padding-top:50px;
-  padding-bottom:50px;
-  text-align:center;
-}
-
-.loadMore-btn {
-  background-color: #167F39;
-  color: white;
-  margin-top: 20px;
-  padding: 20px 10px;
-  text-decoration: none;
-  transition: all 0.25s ease 0s;
-}
 
 
 
