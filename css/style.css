@@ -187,12 +187,16 @@ h3.thin {
   width: 100%;
 }
 
-/* overflow hidden zorgt ervoor dat de omliggende container 
-van float elementen de hoogte krijgt van deze floated elementen*/
 #container {
 	width:90%;
 	margin: 0 auto;
-  overflow: hidden;
+}
+
+/* micro-clearfix */
+#container:after {
+  content:"";
+  display:block;
+  clear:both;
 }
 
 header {
@@ -228,15 +232,19 @@ header h1 {
 /* navigatie */
 
 /*----- Toggle Button -----*/
-.toggle-nav {
-    display:none;
+.menu .toggle-nav {
+    display: none;
 }
 
-nav {
+#navigation {
+  background-color:#044c29;
+}
+
+.menu {
 	background:#044C29;
 }
 
-nav ul {
+.menu ul {
   margin: 0;
   padding: 10px;
   list-style: none;
@@ -244,18 +252,18 @@ nav ul {
   overflow: hidden; 
 }
 
-nav li {
+.menu li {
   display:inline-block;
 }
-nav a {
+.menu a {
   display: block;
   color:#fff;
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
 }
-nav a:hover {
-
+.menu a:hover {
+	color: #fff;
 }
 
 
@@ -433,47 +441,35 @@ footer {
 
 
   /* tablet / mobile menu */
+  .menu .toggle-nav {
+    display:inline-block;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+  }
+
   /* position relative zodat het <ul> position absolute kan krijgen er binnenin */
   .menu {
     position:relative;
+    display:inline-block;
   }
  
-  /* standaard nav display:none; */
   .menu ul.active {
     display:none;
   }
 
   .menu ul {
-    width:30%;
     position:absolute;
     top:100%;
-    padding:20px;
+    left:0px;
+    padding:10px 18px;
     background:#303030;
-    z-index:2;
+    z-index:1;
   }
  
-  .menu li {
-    margin:5px 0px 5px 0px;
-    display:block;
-  }
- 
-  .menu a {
-    display:block;
-  }
- 
-  .toggle-nav {
-    padding:20px;
-    background:#4caf50;
-    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-    color:#fff;
-    font-size:20px;
-    width:20%;
-  }
- 
-  .toggle-nav:hover, .toggle-nav.active {
-    text-decoration:none;
-    color:#f7f7f7;
-  }
+
+
+
 
 }
 
