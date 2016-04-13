@@ -358,9 +358,6 @@ button:hover {
   width:55%;
 }
 
-
-
-
 footer {
   background-color:#044c29;
   padding:10px;
@@ -368,6 +365,29 @@ footer {
 
 
 
+
+/* foto page */
+
+.tile {
+  width: 27%;
+  position: relative;
+  float: left;
+  border:1px solid #f1f1f1;
+  padding:2%;
+  background-color:#f9f9f9;
+  margin:1%;
+}
+
+.image-title {
+  position:relative; 
+  font-size: .9em;
+  text-align: center;
+}
+
+.read-more {
+  text-align: center;
+  margin-top:20px;
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
@@ -466,10 +486,6 @@ footer {
     background:#303030;
     z-index:1;
   }
- 
-
-
-
 
 }
 
@@ -478,7 +494,6 @@ footer {
 
 /* Large desktop */
 @media (min-width: 1200px) { ... }
-
 
 
 
