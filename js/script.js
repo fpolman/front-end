@@ -14,5 +14,11 @@ jQuery(document).ready(function() {
  		// omdat het een anker is zou de pagina normaal naar de top verspringen
         e.preventDefault();
     });
+
+
+	$(".spot-auckland").click(function() {
+		$(".auckland-info").toggle(200);
+	});
+
 });
 

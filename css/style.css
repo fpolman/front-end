@@ -366,7 +366,17 @@ footer {
 
 
 
-/* foto page */
+/* activity page */
+
+#intro-text {
+  margin-top:25px;
+}
+
+#activities {
+    background-color: #fff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 
 .tile {
   width: 27%;
@@ -375,7 +385,8 @@ footer {
   border:1px solid #f1f1f1;
   padding:2%;
   background-color:#f9f9f9;
-  margin:1%;
+  margin-right:2%;
+  box-shadow: 0 1px 5px #999999;
 }
 
 .image-title {
@@ -387,6 +398,25 @@ footer {
 .read-more {
   text-align: center;
   margin-top:20px;
+}
+
+
+#route-map {
+  position:relative;
+}
+
+.spot-auckland {
+  left: 345px;
+  position: absolute;
+  top: 170px;
+  color:#044c29;
+}
+
+.auckland-info {
+  display: none;
+  background-color:red;
+  padding:20px;
+  border-radius:20px;
 }
 
 /* Landscape phones and down */
@@ -487,10 +517,18 @@ footer {
     z-index:1;
   }
 
+  .tile {
+    clear:both;
+    width:90%;
+    text-align:center;
+  } 
+
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
 
 /* Large desktop */
 @media (min-width: 1200px) { ... }
